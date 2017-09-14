@@ -1,11 +1,44 @@
 <resources>
+    <!-- 数字按钮样式 -->
+    <style name="calculator_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/big_btn_backgroud2</item>
+        <item name="android:textColor">@color/chutou_check_txt</item>
+        <item name="android:layout_margin">1dp</item>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- 自定义Dialog -->
+    <style name="Custom_Progress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
     </style>
 
+    <style name="main_tab_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+
+    </style>
+
+
+    <style name="AnimationBottomFade">
+        <item name="android:windowEnterAnimation">@anim/inbottom_totop</item>
+        <item name="android:windowExitAnimation">@anim/intop_tobottom</item>
+    </style>
+    <style name="AnimationLeftFade">
+        <item name="android:windowEnterAnimation">@anim/inleft_toright</item>
+        <item name="android:windowExitAnimation">@anim/inright_toleft</item>
+    </style>
 </resources>
